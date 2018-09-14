@@ -1,6 +1,6 @@
 {
   "name": "redmatic-led",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Control the CCU3 LED via RedMatic",
   "repository": "https://github.com/hobbyquaker/RedMatic-LED",
   "keywords": [
