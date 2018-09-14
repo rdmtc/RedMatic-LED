@@ -1,0 +1,43 @@
+<script type="text/javascript">
+    RED.nodes.registerType('ccu-led', {
+        category: 'redmatic',
+        defaults: {
+            name: {value: ''}
+        },
+        inputs: 1,
+        outputs: 0,
+        icon: 'ccu.png',
+        color: '#4691BA',
+        paletteLabel: 'led',
+        align: 'right',
+        label() {
+            return this.name || 'led';
+        },
+        labelStyle() {
+            return this.name ? 'node_label_italic' : '';
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="ccu-led">
+    <p>Steuern der LED einer CCU3 bzw. RPI-RF-MOD</p>
+    <h3>Inputs</h3>
+    <dl class="message-properties">
+        <dt>payload
+            <span class="property-type">String</span>
+        </dt>
+        <dd>
+            <ul>
+                <li><code>auto</code> LED wird von hss_led gesteuert.</li>
+                <li><code>off</code> LED abschalten.</li>
+                <li><code>red</code></li>
+                <li><code>green</code></li>
+                <li><code>blue</code></li>
+                <li><code>yellow</code></li>
+                <li><code>magenta</code></li>
+                <li><code>cyan</code></li>
+                <li><code>white</code></li>
+            </ul>
+        </dd>
+    </dl>
+</script>
