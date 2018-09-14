@@ -41,15 +41,15 @@ module.exports = function (RED) {
         }
 
         manual(r, g, b) {
-            exec('killall hss_led', () => {
-                fs.writeFile('/sys/devices/platform/leds/leds/rpi_rf_mod:red/brightness', String(r), () => {});
-                fs.writeFile('/sys/devices/platform/leds/leds/rpi_rf_mod:green/brightness', String(g), () => {});
-                fs.writeFile('/sys/devices/platform/leds/leds/rpi_rf_mod:blue/brightness', String(b), () => {});
+            exec('pkill hss_led', () => {
+                fs.writeFile('/sys/class/leds/rpi_rf_mod:red/brightness', String(r), () => {});
+                fs.writeFile('/sys/class/leds/rpi_rf_mod:green/brightness', String(g), () => {});
+                fs.writeFile('/sys/class/leds/rpi_rf_mod:blue/brightness', String(b), () => {});
             });
         }
 
         auto() {
-            exec('killall hss_led', () => {
+            exec('pkill hss_led', () => {
                 spawn('/bin/hss_led', {
                     stdio: 'ignore',
                     detached: true
