@@ -1,7 +1,7 @@
 # RedMatic-LED
 
 [![NPM version](https://badge.fury.io/js/redmatic-led.svg)](http://badge.fury.io/js/redmatic-led)
-[![Build Status](https://travis-ci.org/hobbyquaker/redmatic-led.svg?branch=master)](https://travis-ci.org/hobbyquaker/redmatic-led)
+[![Build Status](https://travis-ci.org/hobbyquaker/RedMatic-LED.svg?branch=master)](https://travis-ci.org/hobbyquaker/RedMatic-LED)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 [![License][mit-badge]][mit-url]
 
