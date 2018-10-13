@@ -1,6 +1,6 @@
 {
   "name": "redmatic-led",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Control the CCU3 LED via RedMatic",
   "repository": "https://github.com/hobbyquaker/RedMatic-LED",
   "keywords": [
@@ -39,8 +39,7 @@
       "js",
       "html"
     ],
-    "rules": {
-    },
+    "rules": {},
     "ignore": []
   }
 }
